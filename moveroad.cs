@@ -10,9 +10,6 @@ public class moveroad : MonoBehaviour
     int f, fuelst;
     float score = 0, speed = -0.2f, data, fuelpos;// переменные для хранения расстояния, скорости и рекорда
     public GameObject block;// игровой объект для размещения блока
-    public GameObject block1;
-    public GameObject block2;
-    public GameObject block3;
     public GameObject fuel;
     bool turbotriger = false;
 
@@ -41,9 +38,6 @@ public class moveroad : MonoBehaviour
             switch (f)
             {
                 case 0: block.transform.position = new Vector3(2.40f, block.transform.position.y, block.transform.position.z); break;
-                case 1: block1.transform.position = new Vector3(0.90f, block1.transform.position.y, block1.transform.position.z); break;
-                case 2: block2.transform.position = new Vector3(-0.80f, block2.transform.position.y, block2.transform.position.z); break;
-                case 3: block3.transform.position = new Vector3(-2.35f, block3.transform.position.y, block3.transform.position.z); break;
                 case 4:
                     fuelst = Random.Range(0, 4);
                     if (fuelst == 0) { fuelpos = 2.40f; }
